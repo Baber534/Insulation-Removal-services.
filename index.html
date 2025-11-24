@@ -1,4 +1,3 @@
-<!-- FILE: index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,27 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Primary Meta Tags -->
-  <title>Professional Insulation Removal Services | Expert Solutions for Your Home</title>
-  <meta name="title" content="Professional Insulation Removal Services | Expert Solutions for Your Home">
-  <meta name="description" content="Leading insulation removal experts providing safe, efficient removal of old, damaged, or contaminated insulation. Serving residential and commercial properties with certified professionals." />
-  <meta name="keywords" content="insulation removal, attic insulation removal, asbestos removal, professional insulation services, mold removal, pest contamination, energy efficiency" />
+  <title>Blown Right Insulation | Expert Removal Services</title>
+  <meta name="title" content="Blown Right Insulation | Expert Removal Services">
+  <meta name="description" content="Professional insulation removal for homes and businesses. Safe, certified experts handling mold, asbestos, and pest damage." />
+  <meta name="keywords" content="insulation removal, attic insulation, asbestos removal, mold remediation, pest damage, energy efficiency, home insulation" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="author" content="Blown Right Insulation">
-  <meta name="google-site-verification" content="7fjhS_eeH2bO2tBoYU6P26FD1KThjDQIJYov-pNLko4" />
   
   <!-- Dynamic Canonical Tag -->
   <link rel="canonical" id="canonical-url" href="https://blownrightinsulation.com/" />
   <script>
-    // Dynamic canonical URL based on current page
     document.getElementById('canonical-url').href = window.location.origin + window.location.pathname;
   </script>
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://blownrightinsulation.com/">
-  <meta property="og:title" content="Professional Insulation Removal Services | Expert Solutions for Your Home">
-  <meta property="og:description" content="Leading insulation removal experts providing safe, efficient removal of old, damaged, or contaminated insulation. Certified professionals you can trust.">
-  <meta property="og:image" content="https://blownrightinsulation.com/images/og-image.jpg">
+  <meta property="og:title" content="Blown Right Insulation | Expert Removal Services">
+  <meta property="og:description" content="Professional insulation removal for homes and businesses. Safe, certified experts handling mold, asbestos, and pest damage.">
+  <meta property="og:image" content="https://blownrightinsulation.com/images/home-og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Blown Right Insulation">
@@ -34,10 +31,10 @@
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://blownrightinsulation.com/">
-  <meta name="twitter:title" content="Professional Insulation Removal Services | Expert Solutions">
-  <meta name="twitter:description" content="Leading insulation removal experts providing safe, efficient removal of old, damaged, or contaminated insulation.">
-  <meta name="twitter:image" content="https://blownrightinsulation.com/images/twitter-image.jpg">
+  <meta property="og:url" content="https://blownrightinsulation.com/">
+  <meta name="twitter:title" content="Blown Right Insulation | Expert Removal Services">
+  <meta name="twitter:description" content="Professional insulation removal for homes and businesses. Safe, certified experts.">
+  <meta name="twitter:image" content="https://blownrightinsulation.com/images/home-twitter.jpg">
   <meta name="twitter:creator" content="@blownrightins">
   
   <!-- Additional SEO Tags -->
@@ -48,202 +45,347 @@
   
   <!-- Backend Indexing Tags -->
   <meta name="page-type" content="homepage">
-  <meta name="page-id" content="home-001">
+  <meta name="page-id" content="home-002">
   <meta name="last-modified" content="2025-11-25">
   <meta name="category" content="insulation-services">
   <meta name="priority" content="high">
   
   <style>
 :root{
-  --max-width: 1200px;
-  --accent: #0b6efd;
-  --accent-dark: #0952c6;
-  --muted: #6b7280;
-  --bg: #f8fafc;
+  --primary: #16a34a;
+  --primary-dark: #15803d;
+  --secondary: #0891b2;
+  --accent: #f59e0b;
+  --dark: #1e293b;
+  --darker: #0f172a;
+  --light: #f1f5f9;
   --white: #ffffff;
-  --dark: #0f172a;
-  --border: #e2e8f0;
+  --gray: #64748b;
+  --border: #cbd5e1;
+  --max-width: 1140px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111; line-height:1.6}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background:var(--light);color:var(--dark);line-height:1.7}
 
-/* Hero Section */
-.hero{
-  background: linear-gradient(135deg, #0b6efd 0%, #0952c6 100%);
-  color: var(--white);
-  padding: 80px 20px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(11,110,253,0.2);
+/* Header */
+.header{
+  background:var(--white);
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:100;
 }
-.hero-content{max-width:800px;margin:0 auto}
-.hero h1{font-size:48px;margin-bottom:16px;font-weight:700;line-height:1.2}
-.hero-subtitle{font-size:20px;margin-bottom:32px;opacity:0.95}
-.hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.nav{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:16px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:24px;
+  font-weight:700;
+  color:var(--primary);
+  text-decoration:none;
+}
+.nav-links{
+  display:flex;
+  gap:32px;
+  list-style:none;
+}
+.nav-links a{
+  color:var(--dark);
+  text-decoration:none;
+  font-weight:500;
+  transition:color 0.3s;
+}
+.nav-links a:hover{color:var(--primary)}
 
-/* Buttons */
+/* Hero */
+.hero{
+  background:linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color:var(--white);
+  padding:100px 24px;
+  text-align:center;
+}
+.hero-content{max-width:900px;margin:0 auto}
+.hero h1{
+  font-size:52px;
+  margin-bottom:24px;
+  font-weight:800;
+  line-height:1.1;
+}
+.hero-lead{
+  font-size:22px;
+  margin-bottom:40px;
+  opacity:0.95;
+  font-weight:300;
+}
+.cta-buttons{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
 .btn{
   display:inline-block;
-  padding:14px 32px;
-  border-radius:8px;
+  padding:16px 40px;
+  border-radius:50px;
   text-decoration:none;
   font-weight:600;
-  transition:all 0.3s ease;
-  font-size:16px;
+  font-size:17px;
+  transition:all 0.3s;
+  border:none;
+  cursor:pointer;
 }
 .btn-primary{
   background:var(--white);
-  color:var(--accent);
+  color:var(--primary);
 }
 .btn-primary:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  transform:scale(1.05);
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
-.btn-secondary{
+.btn-outline{
   background:transparent;
   color:var(--white);
   border:2px solid var(--white);
 }
-.btn-secondary:hover{
+.btn-outline:hover{
   background:var(--white);
-  color:var(--accent);
+  color:var(--primary);
 }
 
 /* Container */
-.container{max-width:var(--max-width);margin:0 auto;padding:60px 24px}
-
-/* Introduction Section */
-.intro-section{
-  background:var(--white);
-  padding:48px;
-  border-radius:16px;
-  box-shadow:0 4px 24px rgba(15,23,42,0.08);
-  margin-bottom:60px;
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:80px 24px;
 }
-.intro-section h2{
+
+/* Features */
+.features{
+  background:var(--white);
+  padding:80px 24px;
+}
+.section-title{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:16px;
+  color:var(--darker);
+  font-weight:700;
+}
+.section-subtitle{
+  text-align:center;
+  font-size:19px;
+  color:var(--gray);
+  margin-bottom:60px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:32px;
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+.feature-card{
+  background:var(--light);
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  transition:all 0.3s;
+  border:2px solid transparent;
+}
+.feature-card:hover{
+  transform:translateY(-8px);
+  border-color:var(--primary);
+  box-shadow:0 12px 40px rgba(22,163,74,0.15);
+}
+.feature-icon{
+  font-size:56px;
+  margin-bottom:20px;
+  display:block;
+}
+.feature-card h3{
+  font-size:22px;
+  margin-bottom:12px;
+  color:var(--darker);
+}
+.feature-card p{
+  color:var(--gray);
+  line-height:1.7;
+}
+
+/* Content Section */
+.content-section{
+  padding:80px 24px;
+  background:var(--white);
+}
+.content-wrapper{
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+.content-box{
+  background:var(--light);
+  padding:48px;
+  border-radius:20px;
+  margin-bottom:40px;
+  border-left:6px solid var(--primary);
+}
+.content-box h2{
   font-size:32px;
+  margin-bottom:20px;
+  color:var(--darker);
+}
+.content-box h3{
+  font-size:24px;
+  margin:28px 0 16px;
+  color:var(--dark);
+}
+.content-box p{
+  font-size:17px;
+  line-height:1.8;
   color:var(--dark);
   margin-bottom:20px;
 }
-.intro-section p{
-  font-size:18px;
-  line-height:1.8;
-  color:#334155;
+.content-box ul{
+  margin:20px 0 20px 24px;
 }
-
-/* Services Grid */
-.services-grid{margin-bottom:60px}
-.services-grid h2{
-  font-size:36px;
-  text-align:center;
-  margin-bottom:40px;
+.content-box li{
+  margin:12px 0;
+  font-size:17px;
   color:var(--dark);
 }
-.service-cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-  gap:24px;
-}
-.service-card{
-  background:var(--white);
-  padding:32px;
-  border-radius:12px;
-  box-shadow:0 2px 12px rgba(15,23,42,0.06);
-  transition:transform 0.3s ease, box-shadow 0.3s ease;
-  border:1px solid var(--border);
-}
-.service-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 8px 24px rgba(11,110,253,0.15);
-}
-.service-card h3{
-  font-size:20px;
-  margin-bottom:12px;
-  color:var(--dark);
-}
-.service-card p{
-  color:var(--muted);
-  line-height:1.6;
-}
-
-/* Content Article */
-.content{
-  background:var(--white);
-  padding:48px;
-  border-radius:16px;
-  box-shadow:0 4px 24px rgba(15,23,42,0.08);
-  margin-bottom:60px;
-}
-.content h2{font-size:28px;margin:32px 0 16px;color:var(--dark)}
-.content h3{font-size:20px;margin:24px 0 12px;color:#1e293b}
-.content p{line-height:1.8;color:#334155;margin:16px 0;font-size:16px}
-.content ul{margin:16px 0 24px 24px}
-.content li{margin:10px 0;color:#334155}
-.content a{color:var(--accent);text-decoration:none;font-weight:500}
-.content a:hover{text-decoration:underline}
-.faqs{margin-top:40px;padding-top:40px;border-top:2px solid var(--border)}
-.faqs h3{color:var(--dark);margin-top:24px}
-.conclusion{font-weight:600;margin-top:32px;padding:24px;background:#f1f5f9;border-left:4px solid var(--accent);border-radius:8px}
-
-/* CTA Section */
-.cta-section{
-  background:linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color:var(--white);
-  padding:60px 48px;
-  border-radius:16px;
-  text-align:center;
-  margin-bottom:60px;
-}
-.cta-section h2{font-size:32px;margin-bottom:16px}
-.cta-section p{font-size:18px;margin-bottom:32px;opacity:0.9}
-.contact-info{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.contact-btn{
-  display:inline-block;
-  padding:16px 32px;
-  background:var(--accent);
-  color:var(--white);
-  text-decoration:none;
-  border-radius:8px;
+.content-box a{
+  color:var(--primary);
   font-weight:600;
-  transition:all 0.3s ease;
+  text-decoration:none;
+}
+.content-box a:hover{
+  text-decoration:underline;
+}
+
+/* Stats */
+.stats{
+  background:linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+  color:var(--white);
+  padding:80px 24px;
+  text-align:center;
+}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:40px;
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+.stat-item h3{
+  font-size:48px;
+  color:var(--accent);
+  margin-bottom:8px;
+  font-weight:800;
+}
+.stat-item p{
+  font-size:18px;
+  opacity:0.9;
+}
+
+/* CTA */
+.cta{
+  background:var(--primary);
+  color:var(--white);
+  padding:80px 24px;
+  text-align:center;
+}
+.cta h2{
+  font-size:40px;
+  margin-bottom:20px;
+  font-weight:700;
+}
+.cta p{
+  font-size:20px;
+  margin-bottom:40px;
+  opacity:0.95;
+}
+.contact-buttons{
+  display:flex;
+  gap:24px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.contact-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:18px 36px;
+  background:var(--white);
+  color:var(--primary);
+  text-decoration:none;
+  border-radius:50px;
+  font-weight:700;
+  font-size:18px;
+  transition:all 0.3s;
 }
 .contact-btn:hover{
-  background:var(--accent-dark);
-  transform:translateY(-2px);
-  box-shadow:0 8px 20px rgba(11,110,253,0.3);
+  transform:translateY(-4px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.2);
 }
 
 /* Footer */
 .footer{
-  background:var(--dark);
+  background:var(--darker);
   color:var(--white);
-  padding:40px 24px;
+  padding:60px 24px 30px;
+}
+.footer-content{
+  max-width:var(--max-width);
+  margin:0 auto;
   text-align:center;
 }
-.footer-content{max-width:var(--max-width);margin:0 auto}
-.footer p{margin-bottom:16px;opacity:0.8}
-.footer-nav{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
-.footer-nav a{color:var(--white);text-decoration:none;opacity:0.8;transition:opacity 0.3}
-.footer-nav a:hover{opacity:1;text-decoration:underline}
+.footer-links{
+  display:flex;
+  gap:32px;
+  justify-content:center;
+  margin-bottom:24px;
+  flex-wrap:wrap;
+}
+.footer-links a{
+  color:var(--white);
+  text-decoration:none;
+  opacity:0.8;
+  transition:opacity 0.3s;
+}
+.footer-links a:hover{
+  opacity:1;
+}
+.copyright{
+  opacity:0.7;
+  font-size:15px;
+}
 
 /* Responsive */
 @media (max-width:768px){
-  .hero h1{font-size:32px}
-  .hero-subtitle{font-size:16px}
-  .hero{padding:60px 20px}
-  .container{padding:40px 16px}
-  .intro-section, .content, .cta-section{padding:32px 24px}
-  .services-grid h2, .intro-section h2{font-size:28px}
-  .content h2{font-size:24px}
-  .service-cards{grid-template-columns:1fr}
-  .hero-cta{flex-direction:column;align-items:center}
-  .btn{width:100%;max-width:300px}
-  .contact-info{flex-direction:column;align-items:center}
-  .contact-btn{width:100%;max-width:300px}
+  .hero h1{font-size:36px}
+  .hero-lead{font-size:18px}
+  .hero{padding:60px 24px}
+  .section-title{font-size:32px}
+  .content-box{padding:32px 24px}
+  .content-box h2{font-size:26px}
+  .nav-links{display:none}
+  .feature-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr}
+  .cta-buttons, .contact-buttons{flex-direction:column;align-items:center}
+  .btn, .contact-btn{width:100%;max-width:320px}
 }
   </style>
 
-  <!-- Website structured data: Organization + Service + FAQ -->
+  <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -253,192 +395,201 @@ html,body{height:100%;font-family:Inter, ui-sans-serif, system-ui, -apple-system
         "@id": "https://blownrightinsulation.com/#organization",
         "name": "Blown Right Insulation",
         "url": "https://blownrightinsulation.com/",
-        "logo": "https://blownrightinsulation.com/logo.png"
+        "logo": "https://blownrightinsulation.com/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-123-456-7890",
+          "contactType": "customer service"
+        }
       },
       {
         "@type": "Service",
-        "@id": "https://blownrightinsulation.com/insulation-removal/#service",
-        "name": "Insulation Removal Services",
-        "description": "Safe and thorough removal of old or contaminated insulation from attics, walls, and crawl spaces. Disposal and site preparation included.",
-        "provider": {"@id": "https://blownrightinsulation.com/#organization"}
+        "@id": "https://blownrightinsulation.com/#service",
+        "serviceType": "Insulation Removal",
+        "provider": {"@id": "https://blownrightinsulation.com/#organization"},
+        "areaServed": "United States",
+        "description": "Professional insulation removal services for residential and commercial properties"
       },
       {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How do I know if my insulation needs to be removed?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Signs include visible damage, water staining, mold growth, pest contamination, strong musty odors, or if the insulation contains hazardous materials like asbestos. A professional inspection can confirm whether removal is necessary."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is insulation removal dangerous?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It can be if hazardous materials are present or if dust and fibers are released. Professionals use protective equipment, containment, and proper disposal to minimize risk."
-            }
-          }
-        ]
+        "@type": "WebPage",
+        "@id": "https://blownrightinsulation.com/#webpage",
+        "url": "https://blownrightinsulation.com/",
+        "name": "Blown Right Insulation | Expert Removal Services",
+        "description": "Professional insulation removal for homes and businesses. Safe, certified experts handling mold, asbestos, and pest damage.",
+        "publisher": {"@id": "https://blownrightinsulation.com/#organization"}
       }
     ]
   }
   </script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Professional Insulation Removal Services</h1>
-      <p class="hero-subtitle">Safe, Efficient, and Certified Solutions for Your Home or Business</p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Get Free Quote</a>
-        <a href="#services" class="btn btn-secondary">Our Services</a>
-      </div>
-    </div>
+  <!--
+ Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="https://blownrightinsulation.com/" class="logo">Blown Right</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Expert Insulation Removal Services</h1>
+      <p class="hero-lead">Safe, efficient removal of damaged insulation. Certified professionals you can trust.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="section-subtitle">Professional insulation removal with safety and quality as our top priorities</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🏆</span>
+        <h3>Certified Experts</h3>
+        <p>Licensed professionals with years of experience in safe insulation removal and disposal.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <h3>Safety First</h3>
+        <p>HEPA filtration, containment barriers, and protective equipment for every project.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Fast Service</h3>
+        <p>Quick turnaround times with minimal disruption to your home or business.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Main Content -->
-  <main class="container">
-    <!-- Introduction Section -->
-    <section class="intro-section">
-      <h2>Why Choose Our Insulation Removal Services?</h2>
-      <p>
-        <a href="https://blownrightinsulation.com/">Professional insulation removal services</a> play a critical role in improving indoor comfort, energy efficiency, and the overall safety of any residential or commercial building. As insulation ages, becomes damaged, or is contaminated, it begins to lose its effectiveness and may even introduce harmful pollutants into the air you breathe. Because insulation is often tucked away in concealed locations—attics, wall cavities, crawl spaces, and basements—property owners might not notice problems until significant issues arise. Understanding why insulation removal matters, when it is needed, and how professionals carry it out can help you make informed decisions about maintaining the health and structural integrity of your property.
-      </p>
+  <section id="about" class="content-section">
+    <div class="content-wrapper">
+      <div class="content-box">
+        <h2>Professional Insulation Removal You Can Trust</h2>
+        <p>
+          <a href="https://blownrightinsulation.com/">Blown Right Insulation</a> specializes in the safe removal of old, damaged, or contaminated insulation from residential and commercial properties. Our certified technicians handle every project with precision, ensuring your property remains clean and safe throughout the process.
+        </p>
+        <p>
+          Insulation deteriorates over time due to moisture, pests, mold, and general wear. When this happens, it loses effectiveness and can introduce harmful contaminants into your indoor air. Our team identifies problem areas and removes compromised materials using industry-leading equipment and techniques.
+        </p>
 
-    </section>
+        <h3>Common Insulation Problems We Solve</h3>
+        <ul>
+          <li>Water damage and moisture contamination</li>
+          <li>Mold and mildew growth</li>
+          <li>Rodent and pest infestations</li>
+          <li>Asbestos-containing materials</li>
+          <li>Reduced thermal efficiency</li>
+          <li>Unpleasant odors and air quality issues</li>
+        </ul>
 
-    <!-- Services Overview -->
-    <section id="services" class="services-grid">
-      <h2>Our Core Services</h2>
-      <div class="service-cards">
-        <div class="service-card">
-          <h3>🏠 Attic Insulation Removal</h3>
-          <p>Complete removal of old, damaged, or contaminated attic insulation with minimal disruption.</p>
-        </div>
-        <div class="service-card">
-          <h3>⚠️ Asbestos Abatement</h3>
-          <p>Safe removal of asbestos-containing materials following strict safety protocols.</p>
-        </div>
-        <div class="service-card">
-          <h3>🦠 Mold Remediation</h3>
-          <p>Professional removal of mold-contaminated insulation and air quality restoration.</p>
-        </div>
-        <div class="service-card">
-          <h3>🐭 Pest Contamination Cleanup</h3>
-          <p>Thorough removal and sanitization of pest-damaged insulation materials.</p>
-        </div>
+        <h3>Our Removal Process</h3>
+        <p>
+          We begin with a thorough inspection to assess the condition of your insulation and identify any hazardous materials. Our technicians then set up containment measures to prevent dust and debris from spreading. Using high-powered HEPA-filtered vacuums and specialized equipment, we safely extract all compromised insulation.
+        </p>
+        <p>
+          After removal, we perform a complete cleanup and can prepare your space for new, high-performance insulation installation. All waste is disposed of according to local environmental regulations, ensuring responsible handling of materials.
+        </p>
+
+        <h3>Benefits of Professional Removal</h3>
+        <p>
+          Removing old insulation improves indoor air quality, enhances energy efficiency, and protects your property's structural integrity. Fresh insulation maintains consistent temperatures, reduces energy costs, and creates a healthier living environment for you and your family.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Main Content Article -->
-    <article class="content">
-      <h2>Why Removing Old or Damaged Insulation Is Essential</h2>
-      <p>
-        Over time, insulation can deteriorate due to moisture, pests, mold, or simple wear and tear. When this happens, it no longer serves its purpose of providing thermal resistance or protecting indoor air quality. Moisture is one of the most common culprits: roof leaks, plumbing issues, and condensation buildup can cause insulation to become damp, reducing its insulating power and creating an environment where mold thrives. Moldy insulation not only loses functionality but can also produce airborne spores that trigger allergies, respiratory issues, and severe health concerns for occupants.
-      </p>
-
-      <p>
-        Another common issue is pest contamination. Rodents, insects, and other pests often burrow into insulation to nest, leaving behind droppings, urine, and other contaminants. Over time, these contaminants can spread throughout the home, affecting air quality and causing foul odors. Once insulation has been compromised by pests, it becomes necessary to remove and replace it to restore a safe and healthy indoor environment. In older homes, there is also the concern of hazardous materials such as asbestos, which may be present in specific insulation types. Disturbing asbestos-containing materials without proper procedures can pose serious health risks, making professional removal essential.
-      </p>
-
-      <h3>Common Signs That Insulation Removal May Be Necessary</h3>
-      <ul>
-        <li>Higher-than-usual energy bills indicating thermal inefficiency.</li>
-        <li>Musty or unpleasant odors coming from the attic or walls.</li>
-        <li>Visible mold, mildew, or water staining on insulation.</li>
-        <li>Rodent droppings, nesting materials, or signs of pest activity.</li>
-        <li>Uneven room temperatures and drafts throughout the building.</li>
-        <li>Visible deterioration, flattening, or sagging of insulation materials.</li>
-      </ul>
-
-      <h2>The Professional Insulation Removal Process Explained</h2>
-      <p>
-        Professional insulation removal involves a thorough, multi-step process designed to protect the structure and the individuals involved. It begins with a detailed assessment of the insulation’s condition, identifying moisture damage, contamination, or potential hazardous materials. If asbestos is suspected, testing is often recommended before proceeding. Once it is safe to begin work, trained technicians set up containment measures, including sealing HVAC registers, laying protective coverings, and using specialized filters to capture airborne particles.
-      </p>
-
-      <p>
-        Insulation is removed using methods appropriate to the type of material being handled. Loose-fill insulation, such as cellulose or fiberglass, is typically vacuumed using high-powered, HEPA-filtered extraction systems that prevent dust and contaminants from spreading. Batt or roll insulation requires manual removal, during which technicians wear protective gear to avoid exposure to irritants. When hazardous materials are involved, strict safety protocols are followed to ensure compliance with local regulations. After the insulation is removed, technicians perform a deep cleaning using HEPA vacuums to remove fine dust and contaminants from all surfaces.
-      </p>
-
-      <h2>Health and Safety Considerations</h2>
-      <p>
-        Health risks associated with damaged or contaminated insulation vary depending on the type of contamination. Mold exposure can lead to symptoms like coughing, sneezing, fatigue, and severe respiratory reactions. Rodent-contaminated insulation may contain harmful pathogens that can circulate into the home if disturbed. Older insulation containing asbestos is especially dangerous, as airborne asbestos fibers can cause long-term health issues. For these reasons, insulation removal should always be performed by trained professionals equipped with proper tools, protective gear, and industry knowledge.
-      </p>
-
-      <h3>Environmental and Disposal Responsibilities</h3>
-      <p>
-        Insulation disposal is another vital part of the removal process. Different regions have specific regulations governing the disposal of contaminated or hazardous materials. Professional removal companies ensure that all insulation waste is transported to authorized facilities and handled according to environmental guidelines. Proper disposal prevents harmful materials from entering landfills and contributing to environmental pollution.
-      </p>
-
-      <h2>Types of Insulation Commonly Removed</h2>
-      <p>
-        Various types of insulation may need removal depending on their condition and the issues affecting them. Fiberglass is one of the most common materials used in homes and is often removed due to moisture or rodent contamination. Cellulose insulation, which is made from recycled paper, can degrade over time or become compacted, reducing its effectiveness. Vermiculite insulation, often found in older homes, sometimes contains asbestos and requires specialized abatement. Spray foam insulation, while durable, can detach or degrade under certain conditions, requiring professional extraction.
-      </p>
-
-      <h2>Long-Term Benefits of Professional Insulation Removal</h2>
-      <p>
-        Removing old or contaminated insulation provides several long-term benefits. First, it ensures the home or building maintains healthy air quality, free from mold, dust, or pollutants. Second, it improves energy efficiency by making space for new, high-performance insulation that helps maintain consistent indoor temperatures. Third, it extends the lifespan of structural components, preventing moisture-related damage that could lead to costly repairs. Finally, professional removal ensures compliance with environmental and safety regulations.
-      </p>
-
-      <h2>Preparing Your Space for Insulation Removal</h2>
-      <p>
-        Before professionals arrive, property owners can take several steps to prepare the space. Clearing pathways, securing pets, and ensuring easy access to attics, crawl spaces, or walls can help the process run smoothly. Technicians may provide additional instructions, such as turning off HVAC systems or removing sensitive items from the workspace. Being prepared helps minimize disruptions and ensures the service is completed efficiently.
-      </p>
-
-      <h2>Frequently Asked Questions</h2>
-
-      <section class="faqs">
-        <h3>How long does the insulation removal process take?</h3>
-        <p>The duration varies depending on the size of the area, accessibility, contamination level, and type of insulation being removed. Smaller residential attics may take only a few hours, while larger or contaminated spaces can require a full day or more.</p>
-
-        <h3>Will insulation removal create a mess in my home?</h3>
-        <p>Professional removal teams use containment barriers, HEPA vacuums, and protective coverings to minimize dust and debris. When performed correctly, the process leaves little to no mess behind.</p>
-
-        <h3>Can I stay in my home during the removal?</h3>
-        <p>In most cases, yes. However, if hazardous materials such as asbestos are present, you may need to vacate the area temporarily until work is complete and the space is deemed safe.</p>
-
-        <h3>Is replacing insulation immediately necessary?</h3>
-        <p>While not always required immediately, replacing insulation soon after removal is recommended to restore energy efficiency and indoor comfort. In some cases, structural repairs or drying may need to be completed first.</p>
-
-        <h3>What types of insulation do professionals install after removal?</h3>
-        <p>Popular choices include fiberglass batts, blown-in cellulose, spray foam, and mineral wool. The best option depends on your climate, budget, and energy-efficiency goals.</p>
-      </section>
-
-      <p class="conclusion">
-        Removing old, damaged, or contaminated insulation is a vital step toward creating a healthier, safer, and more energy-efficient home. With the guidance of trained professionals, the removal process can be completed efficiently and safely, providing a clean foundation for high-quality replacement insulation that enhances comfort and reduces long-term energy costs.
-      </p>
-    </article>
-
-    <!-- Call to Action Section -->
-    <section id="contact" class="cta-section">
-      <h2>Ready to Improve Your Home's Insulation?</h2>
-      <p>Contact our certified professionals today for a free consultation and quote.</p>
-      <div class="contact-info">
-        <a href="tel:+1234567890" class="contact-btn">📞 Call: (123) 456-7890</a>
-        <a href="mailto:info@blownrightinsulation.com" class="contact-btn">✉️ Email Us</a>
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>500+</h3>
+        <p>Projects Completed</p>
       </div>
-    </section>
-  </main>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Safety Compliance</p>
+      </div>
+      <div class="stat-item">
+        <h3>24/7</h3>
+        <p>Emergency Service</p>
+      </div>
+      <div class="stat-item">
+        <h3>15+</h3>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="features">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Comprehensive insulation removal solutions for every situation</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🏠</span>
+        <h3>Attic Insulation Removal</h3>
+        <p>Complete removal of attic insulation with minimal mess and disruption to your home.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚠️</span>
+        <h3>Asbestos Abatement</h3>
+        <p>Safe removal of asbestos materials following strict safety protocols and regulations.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🦠</span>
+        <h3>Mold Remediation</h3>
+        <p>Professional removal of mold-contaminated insulation and air quality restoration.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🐭</span>
+        <h3>Pest Damage Cleanup</h3>
+        <p>Thorough removal and sanitization of insulation damaged by rodents or pests.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Contact us today for a free consultation and quote</p>
+    <div class="contact-buttons">
+      <a href="tel:+1234567890" class="contact-btn">
+        <span>📞</span>
+        <span>Call: (123) 456-7890</span>
+      </a>
+      <a href="mailto:info@blownrightinsulation.com" class="contact-btn">
+        <span>✉️</span>
+        <span>Email Us</span>
+      </a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <p>&copy; 2025 Blown Right Insulation. All rights reserved.</p>
-      <nav class="footer-nav">
+      <div class="footer-links">
+        <a href="https://blownrightinsulation.com/">Home</a>
         <a href="https://blownrightinsulation.com/privacy">Privacy Policy</a>
         <a href="https://blownrightinsulation.com/terms">Terms of Service</a>
         <a href="https://blownrightinsulation.com/sitemap.xml">Sitemap</a>
-      </nav>
+      </div>
+      <p class="copyright">&copy; 2025 Blown Right Insulation. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Backend Indexing Script -->
   <script>
-    // Send page data to backend for indexing
     window.addEventListener('load', function() {
       const pageData = {
         url: window.location.href,
@@ -451,7 +602,7 @@ html,body{height:100%;font-family:Inter, ui-sans-serif, system-ui, -apple-system
         timestamp: new Date().toISOString()
       };
       
-      // Send to your backend API endpoint
+      // Uncomment to send to your backend API
       // fetch('/api/index-page', {
       //   method: 'POST',
       //   headers: { 'Content-Type': 'application/json' },
@@ -463,5 +614,3 @@ html,body{height:100%;font-family:Inter, ui-sans-serif, system-ui, -apple-system
   </script>
 </body>
 </html>
-
-
