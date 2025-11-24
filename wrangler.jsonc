@@ -1,7 +1,13 @@
-{
-  "name": "blown-right-insulation",
-  "compatibility_date": "2025-11-24",
-  "assets": {
-    "directory": "./"
-  }
-}
+git add wrangler.jsonc
+   git commit -m "Add Wrangler configuration"
+   git push
+```
+
+4. **Cloudflare will automatically detect the push and retry deployment**
+
+Your file structure should look like:
+```
+your-repo/
+├── index.html
+├── wrangler.jsonc    ← Add this file
+└── (other files)
